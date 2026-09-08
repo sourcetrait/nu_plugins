@@ -1,0 +1,32 @@
+[package]
+name        = "nu_plugin_soak"
+description = "A Liquid templating plugin for Nushell"
+repository.workspace   = true
+version.workspace      = true
+authors.workspace      = true
+license.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+homepage.workspace     = true
+categories.workspace   = true
+keywords.workspace     = true
+
+[dependencies]
+dir_walker.workspace = true
+humantime.workspace  = true
+liquid.workspace     = true
+snafu.workspace      = true
+
+nu-plugin.workspace     = true
+nu-protocol.workspace   = true
+nu-glob.workspace       = true
+nu-ansi-term.workspace  = true
+
+[dev-dependencies]
+tempfile.workspace   = true
+
+sourcetrait_tooling.workspace = true
+
+nu-plugin-engine.workspace       = true
+nu-plugin-test-support.workspace = true
+

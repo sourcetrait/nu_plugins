@@ -1,8 +1,8 @@
-Project
+SourceTrait Nu Plugins
 ================================================================================
 [![License Badge]][License]
 
-
+Standalone plugins for Nushell that are made available for potential upstream.
 
 Repository
 --------------------------------------------------------------------------------
@@ -26,7 +26,7 @@ contribution.
 
 License (AGPL3)
 --------------------------------------------------------------------------------
-Project  
+SourceTrait Nu Plugins  
 Developed by [SourceTrait](https://sourcetrait.com), a division of **Asmov LLC**  
 Copyright (C) 2026 [Asmov LLC](https://asmov.software)  
 
@@ -43,6 +43,23 @@ GNU Affero General Public License for more details.
 You should have received a [copy](./LICENSE-AGPL-3.txt) of the
 GNU Affero General Public License along with this program.
 If not, see https://www.gnu.org/licenses/.
+
+Alignment with Upstream
+--------------------------------------------------------------------------------
+
+The following build files are manually aligned with the [Nushell](https://github.com/nushell/nushell)
+repository:
+- .gitattributes
+- clippy.toml
+- Cross.toml
+- rust-toolchain.toml
+- rustfmt.toml
+
+The following Cargo properties are manually aligned with Nushell:
+- version
+- rust-version
+
+Git tagging is aligned with the Nushell repository's version tagging.
 
 
 [Docs Badge]: https://img.shields.io/badge/docs-blue
