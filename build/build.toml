@@ -1,0 +1,90 @@
+architectures = [
+    "aarch/64",
+    "x86/64",
+]
+systems = [
+    "fedora/server/44",
+    "macos/26",
+    "ubuntu/server/26",
+    "windows/server/2025",
+]
+platforms = [
+    "gnu",
+    "macos",
+    "windows",
+]
+packages = [
+    "deb",
+    "msi",
+    "macos/pkg",
+    "rpm",
+    "tar/xz",
+    "tar/zst",
+]
+artifacts = [
+    "compiled",
+    "source",
+]
+
+[[product]]
+name = "aarch/64/deb"
+architecture = "aarch/64"
+system = "ubuntu/server/26"
+package = "deb"
+artifact = "compiled"
+filename = "{{name}}.{{version}}.aarch64.deb"
+
+[[product]]
+name = "aarch/64/rpm"
+architecture = "aarch/64"
+system = "fedora/server/44"
+package = "rpm"
+artifact = "compiled"
+filename = "{{name}}.{{version}}.aarch64.rpm"
+
+[[product]]
+name = "aarch/64/macos/pkg"
+architecture = "aarch/64"
+system = "macos/26"
+package = "macos/pkg"
+artifact = "compiled"
+filename = "{{name}}.{{version}}.aarch64.pkg"
+
+[[product]]
+name = "src/gnu/xz"
+platform = "gnu"
+package = "tar/xz"
+artifact = "source"
+filename = "{{name}}.{{version}}.src.tar.xz"
+
+[[product]]
+name = "src/gnu/zst"
+platform = "gnu"
+package = "tar/zst"
+artifact = "source"
+filename = "{{name}}.{{version}}.src.tar.zst"
+
+[[product]]
+name = "x86/64/deb"
+architecture = "x86/64"
+system = "ubuntu/server/26"
+package = "deb"
+artifact = "compiled"
+filename = "{{name}}.{{version}}.x86_64.deb"
+
+[[product]]
+name = "x86/64/msi"
+architecture = "x86/64"
+system = "windows/server/2025"
+package = "msi"
+artifact = "compiled"
+filename = "{{name}}.{{version}}.x86_64.msi"
+
+[[product]]
+name = "x86/64/rpm"
+architecture = "x86/64"
+system = "fedora/server/44"
+package = "rpm"
+artifact = "compiled"
+filename = "{{name}}.{{version}}.x86_64.rpm"
+
